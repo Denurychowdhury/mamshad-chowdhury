@@ -1,0 +1,103 @@
+.header-container{
+    height: 100%;
+    background-image: url(./image/banner/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.nav{
+    display: flex;
+    color:var(--font-primary-color);
+    gap: 20px;
+    padding-top: 20px;
+    justify-content: space-between;
+    font-size: 40px;
+}
+#right-menu-icon-id{
+    width: 175px;
+    text-align: center;
+}
+.container{
+    padding: 0px 40px;
+}
+.banner-title h1{
+    font-size: 152px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 20px 0px;
+}
+.banner-description{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+.banner-profile-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+}
+.banner-profile-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 40px;
+}
+.check-icon{
+    height: 60px;
+    width: 60px;
+}
+.banner-image-container{
+    background-color: var(--font-primary-color);
+    width: fit-content;
+}
+#banner-image{
+    height: 300px;
+}
+.work-icon-container{
+    display: flex;
+    gap:14px;
+    padding:40px 0px;
+}
+.complete-project-container{
+    display: flex;
+    justify-content: space-between;
+}
+.complete-project-card p{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.complete-project-card h1{
+    font-size: 152px;
+    text-transform: uppercase;
+}
+
+/* this is media only */
+@media only screen and (min-width:200px) and (max-width:576px){
+    .container{
+        padding: 0px 0px;
+    }
+    .nav{
+    color: red;
+    }
+    .complete-project-container{
+        flex-direction: column;
+    }
+    .banner-profile-container {
+        /* display: flex; */
+        justify-content: space-between;
+        border-top: 1px solid var(--font-primary-color);
+        border-bottom: 1px solid var(--font-primary-color);
+        flex-direction: column;
+    }
+    .banner-title h1{
+        font-size:25px;
+    }
+    .banner-image-container{
+        width: 100%;
+    }
+    #banner-image{
+        width: 100%;
+    }
+}
