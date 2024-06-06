@@ -72,9 +72,20 @@ footer {
 }
 @media only screen and (min-width: 200px) and (max-width: 576px) {
   .footer-container {
+    /* padding: 30px; */
+    align-items: center;
     flex-direction: column;
+  }
+  .left-footer-form {
+    width: 100%;
   }
   .social-icon img {
     width: 50px;
+  }
+  #input-message {
+    margin-top: 11px;
+  }
+  .right-footer-contact {
+    width: 100%;
   }
 }
