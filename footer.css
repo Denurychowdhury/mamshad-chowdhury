@@ -74,4 +74,7 @@ footer {
   .footer-container {
     flex-direction: column;
   }
+  .social-icon img {
+    width: 50px;
+  }
 }
