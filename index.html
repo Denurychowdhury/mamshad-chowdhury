@@ -144,7 +144,7 @@
       <div class="section-title">
         <h1>//project-container</h1>
       </div>
-      <div class="projects">
+      <div class="projects" id="projects">
         <div class="project">
           <img src="./image/project/image 3.png" alt="">
         </div>
@@ -159,7 +159,7 @@
         </div>
       </div>
       <div class="check-all-project">
-        <button>check all project</button>
+        <button onclick="handleshowmoreproject()">check all project</button>
       </div>
     </section>
 
@@ -321,13 +321,18 @@
     <div class="form-title">
       <h1 id="form-title">// wanna work together?</h1>
     </div>
-    <form class="form" action="">
-      <input  class="input" type="text" placeholder="your name"/>
-      <input  class="input" type="email" placeholder="your email"/>
-      <input  id="input-message" class="input" type="text" placeholder="your message"/>
+    <form class="form" action=""onsubmit="handlecontact(event)" >
+      <input  class="input" type="text" name="name"  placeholder="your name"/>
+      <input  class="input" type="email" name="email"  placeholder="your email"/>
+      <input  id="input-message" name="message" class="input"  type="text" placeholder="your message"/>
 
-      <button id="send-button">send</button>
+      <button id="send-button"type="submit" >send</button>
     </form>
+    <div style="margin-top: 20px;"  id="success_container">
+      <!-- <p>your name: denury</p>
+      <p>your email: denuryc@gmail.com</p>
+      <p>your message: hello</p> -->
+    </div>
   </div>
   <div class="right-footer-contact">
     <div class="contact-title">
@@ -352,5 +357,6 @@
 </footer>
    <!-- footer section end  -->
    </main>
+   <script src="./script.js"></script>
 </body>
 </html>
